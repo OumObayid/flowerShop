@@ -1,0 +1,30 @@
+<div class="container mt-5">
+    <h1 class="text-center title">Gestion des Produits</h1>
+  
+    <table class="table table-striped table-hover">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Nom</th>
+          <th scope="col">Description</th>
+          <th scope="col">Prix</th>
+          <th scope="col">Image</th>
+          <th scope="col">Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let product of products">
+          <td scope="row">{{ product.id }}</td>
+          <td>{{ product.nom }}</td>
+          <td class="product-description">{{ product.description }}</td>
+          <td>{{ product.prix }} €</td>
+          <td><img [src]="product.image" class="card-img-top product-img" alt="{{ product.nom }}" /></td>
+          <td class="d-flex">
+            <button class="btn btn-warning mr-2">Modifier</button>
+            <button class="btn btn-danger">Supprimer</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  

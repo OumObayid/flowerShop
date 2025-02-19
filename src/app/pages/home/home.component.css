@@ -1,0 +1,7 @@
+.product-img {
+    width: 100%; /* Pour que l'image prenne toute la largeur de la carte */
+    height: 250px; /* Fixe une hauteur standard */
+    object-fit: cover; /* Coupe l'image pour qu'elle s'adapte sans déformation */
+    border-radius: 10px; /* Coins arrondis pour un joli rendu */
+  }
+  
