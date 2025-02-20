@@ -1,0 +1,21 @@
+.product-img {
+    width: 100%; /* Pour que l'image prenne toute la largeur de la carte */
+    height: 250px; /* Fixe une hauteur standard */
+    object-fit: cover; /* Coupe l'image pour qu'elle s'adapte sans déformation */
+    border-radius: 10px; /* Coins arrondis pour un joli rendu */
+  }
+    /* Bouton floral */
+    .btn-flower {
+      background: #b8bd7c;
+      color: white;
+      padding: 10px 20px;
+      font-size: 1.2rem;
+      border-radius: 30px;
+      transition: 0.3s ease-in-out;
+      border: 2px solid white;
+    }
+    
+  .btn-flower:hover {
+    background: #c5c375;
+    transform: scale(1.05);
+  }
