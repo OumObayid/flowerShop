@@ -37,6 +37,8 @@ if ($result) {
         "success" => true,
         "categories" => $categories
     ]);
+    // Vérifie s'il y a une erreur JSON
+    // die(json_last_error_msg()); 
 } else {
     // Réponse en cas d'échec de la requête
     echo json_encode([

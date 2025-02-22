@@ -26,7 +26,7 @@ if ($id) {
         echo json_encode(["success" => false, "message" => "Échec de la suppression ou categorie introuvable."]);
     }
 } else {
-    echo json_encode(["success" => false, "message" => "ID non fourni ou invalide."]);
+        echo json_encode(["success" => false, "message" => "ID non fourni ou invalide."]);
 }
 
 mysqli_close($conn);
