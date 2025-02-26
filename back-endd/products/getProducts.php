@@ -15,7 +15,10 @@ if (!$conn) {
 }
 
 // Requête pour récupérer les produits
-$query = "SELECT id, nom, description, prix, categorie_id, image FROM produits";
+// $query = "SELECT id, nom, description, prix, categorie_id, image FROM produits";
+$query = "SELECT p.id, p.nom, p.description, p.prix, p.categorie_id, c.nom AS categorie_nom, p.image 
+          FROM produits p 
+          INNER JOIN categories c ON p.categorie_id = c.id";
 $result = mysqli_query($conn, $query);
 
 if (!$result) {

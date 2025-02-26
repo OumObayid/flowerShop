@@ -6,11 +6,11 @@ header('Access-Control-Allow-Headers: Content-Type');
 
 $conn = mysqli_connect("localhost", "root", "", "flowershop");
 
-// Gérer les pré-requêtes CORS
-if ($_SERVER['REQUEST_METHOD'] == 'OPTIONS') {
-    header('Access-Control-Allow-Methods: POST');
-    exit(0);
-}
+// // Gérer les pré-requêtes CORS
+// if ($_SERVER['REQUEST_METHOD'] == 'OPTIONS') {
+//     header('Access-Control-Allow-Methods: POST');
+//     exit(0);
+// }
 
 // Vérifier si une requête POST est envoyée
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {

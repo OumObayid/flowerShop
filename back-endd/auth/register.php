@@ -41,7 +41,7 @@ if (mysqli_num_rows($result) > 0) {
 }
 
 // Préparer et exécuter la requête d'insertion
-$query = "INSERT INTO users (firstname, lastname, email, password, phone) VALUES ('$firstname', '$lastname', '$email', '$password','$phone')";
+$query = "INSERT INTO users (firstname, lastname,role, email, password, phone) VALUES ('$firstname', '$lastname','user', '$email', '$password','$phone')";
 
 // Réponse au client
 if (mysqli_query($conn, $query)) {
